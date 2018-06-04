@@ -1,0 +1,27 @@
+{
+  "name": "fake_service",
+  "version": "0.1.0",
+  "description": "Fake web service, generate random JSON, return responses statistically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ded5173:/var/git/node_service.git"
+  },
+  "author": "Bojan Markovic <bmarkovic@haproxy.com>",
+  "license": "MIT",
+  "dependencies": {
+    "clf-date": "^0.1.0",
+    "express": "^4.16.2",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.5",
+    "morgan": "^1.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
