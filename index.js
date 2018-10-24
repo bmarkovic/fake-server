@@ -129,7 +129,7 @@ const stats = (req, res) => {
   str += `4xx: ${(100 * reqs[400] / numReq).toFixed(2)}%\n`
   str += `5xx: ${(100 * reqs[500] / numReq).toFixed(2)}%\n`
 
-  res.send(str)
+  res.type('txt').send(str)
 }
 const defaultResponse = (config) => {
 
@@ -157,11 +157,11 @@ const defaultResponse = (config) => {
       } else if (dice < perc200 + perc300 + perc400) {
         reqs[400] += 1
         let status = 400 + faker.random.arrayElement(errors400)
-        res.status(status).send(respTable[status])
+        res.type('txt').status(status).send(respTable[status])
       } else {
         reqs[500] += 1
         let status = _.random(500, 501, false)
-        res.status(status).send(respTable[status])
+        res.type('txt').status(status).send(respTable[status])
       }
     }
   }
