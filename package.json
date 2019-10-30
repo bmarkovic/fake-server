@@ -18,10 +18,8 @@
     "clf-date": "^0.1.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.15",
     "morgan": "^1.9.1"
   },
-  "devDependencies": {
-    "nodemon": "^1.14.12"
-  }
+  "devDependencies": {}
 }
